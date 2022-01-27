@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 using namespace std ;
 
@@ -31,7 +32,50 @@ int main()
 
     cout << str_length.length() << " ";
 
-    cout << str_length.size() ;
+    cout << str_length.size() << " \n";
+
+    //access string
+
+    string my_access_string = "My access String";
+
+    cout << my_access_string[6]<< "\n";
+
+    my_access_string[0] = 'D';
+
+    cout << my_access_string << " \n";
+
+// Omitting Namespace
+
+    std:: string omitting = "hello" ;
+
+    std:: cout << omitting << " \n" ;
+
+
+// Math
+
+    // MIN AND MAX
+
+    cout << max(5,6) << " \n" ;
+    cout << min(5,6) << " \n" ;
+    cout << sqrt(64) << " \n" ;
+    cout << log(8) << " \n";
+
+// Create refference
+
+    string food = "Pizza";
+    string &meal = food;
+
+    string* str = &food;
+
+    cout << food << "\n";
+    cout << meal << " \n";
+    cout << str << " \n";
+    cout << *str << " \n";
+
+
+
+
+
 
 
 
